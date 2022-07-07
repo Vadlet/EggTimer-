@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		FAA6B6712877134200ED20DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6B6702877134200ED20DF /* AppDelegate.swift */; };
-		FAA6B6732877134200ED20DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6B6722877134200ED20DF /* SceneDelegate.swift */; };
-		FAA6B6752877134200ED20DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6B6742877134200ED20DF /* ViewController.swift */; };
-		FAA6B6782877134200ED20DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6B6762877134200ED20DF /* Main.storyboard */; };
 		FAA6B67A2877134400ED20DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6B6792877134400ED20DF /* Assets.xcassets */; };
 		FAA6B67D2877134400ED20DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6B67B2877134400ED20DF /* LaunchScreen.storyboard */; };
+		FAA6B6882877144600ED20DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6B6872877144600ED20DF /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAA6B66D2877134200ED20DF /* EggTimer-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EggTimer-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6B6702877134200ED20DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA6B6722877134200ED20DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA6B6742877134200ED20DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA6B6772877134200ED20DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA6B6792877134400ED20DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6B67C2877134400ED20DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA6B67E2877134400ED20DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA6B6872877144600ED20DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +52,37 @@
 		FAA6B66F2877134200ED20DF /* EggTimer- */ = {
 			isa = PBXGroup;
 			children = (
-				FAA6B6702877134200ED20DF /* AppDelegate.swift */,
-				FAA6B6722877134200ED20DF /* SceneDelegate.swift */,
-				FAA6B6742877134200ED20DF /* ViewController.swift */,
-				FAA6B6762877134200ED20DF /* Main.storyboard */,
+				FAA6B6862877142800ED20DF /* SupportingFiles */,
+				FAA6B6852877140900ED20DF /* Controller */,
+				FAA6B684287713E500ED20DF /* Resources */,
+			);
+			path = "EggTimer-";
+			sourceTree = "<group>";
+		};
+		FAA6B684287713E500ED20DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FAA6B6792877134400ED20DF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA6B6852877140900ED20DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6B6872877144600ED20DF /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAA6B6862877142800ED20DF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6B6702877134200ED20DF /* AppDelegate.swift */,
 				FAA6B67B2877134400ED20DF /* LaunchScreen.storyboard */,
 				FAA6B67E2877134400ED20DF /* Info.plist */,
 			);
-			path = "EggTimer-";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +145,6 @@
 			files = (
 				FAA6B67D2877134400ED20DF /* LaunchScreen.storyboard in Resources */,
 				FAA6B67A2877134400ED20DF /* Assets.xcassets in Resources */,
-				FAA6B6782877134200ED20DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA6B6752877134200ED20DF /* ViewController.swift in Sources */,
 				FAA6B6712877134200ED20DF /* AppDelegate.swift in Sources */,
-				FAA6B6732877134200ED20DF /* SceneDelegate.swift in Sources */,
+				FAA6B6882877144600ED20DF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAA6B6762877134200ED20DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA6B6772877134200ED20DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA6B67B2877134400ED20DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +297,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4P7TU63MUQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EggTimer-/Info.plist";
+				INFOPLIST_FILE = "EggTimer-/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +312,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +325,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4P7TU63MUQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EggTimer-/Info.plist";
+				INFOPLIST_FILE = "EggTimer-/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
